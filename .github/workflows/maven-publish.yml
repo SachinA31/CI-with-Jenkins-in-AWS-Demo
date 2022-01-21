@@ -37,4 +37,4 @@ jobs:
     - name: Publish to GitHub Packages Apache Maven
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       env:
-        SUPER_SECRET: ${{ secrets.ARTIFACTORY_ACCESS_TOKEN }}
+        JF_ARTIFACTORY_1: ${{ secrets.ARTIFACTORY_ACCESS_TOKEN }}
