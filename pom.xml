@@ -51,12 +51,14 @@
             </plugin>
         </plugins>
     </build>
+    <servers>
+          <server>
+          <id>central</id>
+          <username>sachinargade111@gmail.com</username>
+          <password>Ganesha@7719</password>
+          </server>
+      </servers>
  <distributionManagement>
-     <server>
-         <id>central</id>
-         <username>sachinargade111@gmail.com</username>
-         <password>Ganesha@7719</password>
-     </server>
     <repository>
         <id>central</id>
         <name>a0ena3zpbxo9i-artifactory-primary-0-releases</name>
