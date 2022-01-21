@@ -7,15 +7,6 @@
     <packaging>pom</packaging>
     <name>Project Build</name>
     
-    <servers>
-          <server>
-          <id>central</id>
-          <username>sachinargade111@gmail.com</username>
-          <password>Ganesha@7719</password>
-          </server>
-      </servers>
-
-    
     <modules>
         <module>project</module>
     </modules>
