@@ -45,4 +45,5 @@ jobs:
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       #run: jf rt ping
       env:
-        GITHUB_TOKEN: ${{ github.token }}
+        #GITHUB_TOKEN: ${{ github.token }}
+        JF_ARTIFACTORY_1: ${{ secrets.ARTIFACTORY_ACCESS_TOKEN }}
