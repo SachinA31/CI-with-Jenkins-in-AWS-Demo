@@ -41,6 +41,7 @@ jobs:
         #ARTIFACTORY_ACCESS_TOKEN: ${{ github.ARTIFACTORY_ACCESS_TOKEN }}
         JF_ARTIFACTORY_1: ${{ secrets.ARTIFACTORY_ACCESS_TOKEN }}
    
+    - uses: jfrog/setup-jfrog-cli@v2 
     - name: Publish to GitHub Packages Apache Maven
       #run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       run: jf rt u "target/*.war" --server-id 'central'
