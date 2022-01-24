@@ -44,7 +44,7 @@ jobs:
     - uses: jfrog/setup-jfrog-cli@v2 
     - name: Publish to GitHub Packages Apache Maven
       #run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
-      run: jfrog rt u "target/*.war" --server-id 'central'
+      run: jfrog rt u "target/*.war"
       #run: jf rt ping
       env:
         #GITHUB_TOKEN: ${{ github.token }}
