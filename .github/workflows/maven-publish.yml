@@ -43,7 +43,7 @@ jobs:
    
     - name: Publish to GitHub Packages Apache Maven
       #run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
-      run: jf rt u "target/*.war --server-id 'central'
+      run: jf rt u "target/*.war" --server-id 'central'
       #run: jf rt ping
       env:
         #GITHUB_TOKEN: ${{ github.token }}
