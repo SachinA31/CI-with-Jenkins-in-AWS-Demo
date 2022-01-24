@@ -35,7 +35,7 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Publish to GitHub Packages Apache Maven
-      #run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
-      run: jf rt ping
+      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
+      #run: jf rt ping
       env:
-        ARTIFACTORY_ACCESS_TOKEN: ${{ secrets.ARTIFACTORY_ACCESS_TOKEN }}
+        GITHUB_TOKEN: ${{ github.token }}
