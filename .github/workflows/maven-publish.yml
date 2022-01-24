@@ -33,7 +33,11 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-
+      
+    - uses: jfrog/setup-jfrog-cli@v2  
+    - name: JFrog artifactory
+      run: jf rt ping
+   
     - name: Publish to GitHub Packages Apache Maven
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       #run: jf rt ping
