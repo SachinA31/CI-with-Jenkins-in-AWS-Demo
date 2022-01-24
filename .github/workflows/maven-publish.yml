@@ -37,6 +37,8 @@ jobs:
     - uses: jfrog/setup-jfrog-cli@v2  
     - name: JFrog artifactory
       run: jfrog rt ping
+      env:
+        ARTIFACTORY_ACCESS_TOKEN: ${{ github.ARTIFACTORY_ACCESS_TOKEN }}
    
     - name: Publish to GitHub Packages Apache Maven
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
